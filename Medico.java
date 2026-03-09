@@ -1,26 +1,18 @@
-public class Medico {
-    private String nome;
-    private String email;
+public class Medico extends Pessoa{
+
     private Integer crm;
-
-    public String getNome() {
-        return nome;
-    }
-
-    public String getEmail() {
-        return email;
-    }
 
     public Integer getCrm() {
         return crm;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    // Método - Ação - Sobrescrita
+    @Override
+    public void verConsulta() {
+        System.out.println("Visualizando consultas dos médicos...");
     }
 
-    public void setEmail(String email) {
-        this.email = email;
-    }
+    
+
 
 }

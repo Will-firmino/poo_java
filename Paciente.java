@@ -1,13 +1,19 @@
-public class Paciente {
+public class Paciente extends Pessoa{
     // Atributos
-    private String nome;
-    private String email;
     private String telefone;
 
-    // Métodos
-    public void agendarConsulta() {
-        System.out.println("Consulta Agendada!");
+    public String getTelefone() {
+        return telefone;
     }
+    
+    // Método - Ação - Sobrescrita
+    @Override
+    public void verConsulta() {
+        System.out.println("Visualizando consultas dos pacientes...");
+    }
+
+
+
     
     
 }
